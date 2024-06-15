@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>性感荷官在线发牌</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            background: #f2f1f6;
+        }
+        .container {
+            position: relative;
+            width: 500px;
+            height: 300px;
+            background: #f2f1f6;
+ 
+        }
+        .container h1 {
+            margin-top: 0;
+            text-align: center;
+        }
+        .container img {
+            vertical-align: -70px;
+        }
+        .bd {
+            padding-left: 30px;
+        }
+        .ft {
+            position: absolute;
+            width: 100%;
+            bottom: 20px;
+            padding: 0 30px;
+            line-height: 30px;
+            box-sizing: border-box;
+        }
+        .btn-group {
+            float: left;
+        }
+        .fr {
+            float: right;
+        }
+        button {
+            cursor: pointer;
+        }
+        #p1 {
+        }
+        .not-allow {
+            position: relative;
+        }
+        #p2 {
+            display: none;
+        }
+        .red {
+            margin: 0;
+            font-size: 24px;
+            padding: 30px 40px;
+            color: red;
+            letter-spacing: 4px;
+        }
+        .wavy {
+            text-decoration: underline;
+            text-decoration-style: wavy;
+        }
+        .name {
+            padding-left: 10px;
+        }
+        .btn {
+            padding: 6px 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="p1">
+            <h1>性感荷官在线发牌</h1>
+            <div class="bd">
+                亲爱的玩家：<img src="https://ts1.cn.mm.bing.net/th/id/R-C.fadfcddfb6f93bab6d4eff24d9ce0e08?rik=PgjYZ%2f0U6tHVnw&riu=http%3a%2f%2fwx4.sinaimg.cn%2flarge%2f006ARE9vgy1fzf8cgmqi5j309v0a574h.jpg&ehk=SpVluA2N8zJ3xPQwOfkKPvGdrpHAIpH9b7qPDGAhRT0%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1.jpg" width="120"/>
+                                       点击同意，速速与性感荷官开始🤺吧！
+<img src=https://ts1.cn.mm.bing.net/th/id/R-C.fadfcddfb6f93bab6d4eff24d9ce0e08?rik=PgjYZ%2f0U6tHVnw&riu=http%3a%2f%2fwx4.sinaimg.cn%2flarge%2f006ARE9vgy1fzf8cgmqi5j309v0a574h.jpg&ehk=SpVluA2N8zJ3xPQwOfkKPvGdrpHAIpH9b7qPDGAhRT0%3d&risl=&pid=ImgRaw&r=0&sres=0.05&sresct=10>
+            </div>
+ 
+            <div class="ft">
+                <div class="btn-group">
+                    <button class="btn allow">同意</button>
+                    <button class="btn not-allow" id="not-allow">不同意</button>
+                </div>
+                <div class="fr">
+                    来源: <span class="name">      某不知名小网站</span>
+                </div>
+            </div>
+        </div>
+        <div id="p2">
+            <h2 class="red">
+                嘿嘿，亲爱的用户，您被骗了，根本没有什么小网站！再看看我们其他的项目吧！</span>。<br/>
+            </h2>
+            <div class="ft">
+                <button class="btn fr exit">退出</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        (function(){
+            function $(selector) {
+                return document.querySelector(selector);
+            }
+            var $p1 = document.getElementById('p1');
+            var $p2 = document.getElementById('p2');
+            var $container = $('.container');
+            var $btn = $('#not-allow');
+            var isBlockClose = true;
+ 
+            var maxX = $container.clientWidth - 1, maxY = $container.clientHeight - 1;
+            var originPos = $btn.getBoundingClientRect();
+ 
+            $('.allow').addEventListener('click', function() {
+                $p1.style.display = 'none';
+                $p2.style.display = 'block';
+            });
+            $btn.addEventListener('mouseover', function() {
+                this.style.left = Math.floor(Math.random() * maxX - originPos.left) + 'px';
+                this.style.top = Math.floor(Math.random() * maxY - originPos.top) + 'px';
+                //console.log(this.style.left, this.style.top);
+            });
+            $('.exit').addEventListener('click', function() {
+                isBlockClose = false;
+                window.close();
+            });
+            window.addEventListener('beforeunload', function(e) {
+                if (isBlockClose) {
+                    alert("此路不通");
+                    e.returnValue = false;
+                    e.preventDefault();
+                    return "此路不通";
+                }
+            });
+        })();
+    </script>
+</body>
+</html>
